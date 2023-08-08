@@ -5,6 +5,7 @@ use parry3d::{bounding_volume::Aabb, shape::TypedShape};
 pub mod rapier;
 #[cfg(feature = "xpbd")]
 pub mod xpbd;
+pub mod parry3d_collider;
 
 pub trait PolyanyaCollider: Component {
     fn into_typed_shape(&self) -> TypedShape;
